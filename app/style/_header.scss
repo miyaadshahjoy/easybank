@@ -1,0 +1,163 @@
+
+
+.header
+{
+    position: relative;
+    padding: 20px 24px;
+    background: $white;
+    
+    //toggle button
+
+    &.toggle
+        {
+            .header__hmenu
+            {
+                >span:first-child
+                {
+                    transform: rotate(45deg);
+                } 
+                >span:nth-child(2)
+                {
+                    opacity: 0;
+                }
+                >span:last-child
+                {
+                    transform: rotate(-45deg);
+
+                }
+
+            }
+           
+           
+            
+                
+            
+        }
+
+
+
+
+
+    &__logo
+    {
+        img
+        {
+            height: 23px;
+            width: 141px;
+        }
+    }
+
+    &__hmenu
+    {
+        > span 
+        {
+            display: block;
+            height: 2px;
+            width: 25px;
+            background-color: $darkBlue;
+            &:not(:last-child)
+            {
+                margin-bottom: 5px;
+            }
+            transform-origin: 3px 1px;
+            transition: all 400ms ease-in-out;
+
+            
+        }
+
+        
+
+
+        
+            
+            
+            
+                
+          
+            
+        
+    }
+
+    &__links
+    {
+        a
+        {
+            position: relative;
+            font-size: 14px;
+            color: $grayishBlue;
+            
+        
+            transition: color 200ms ease-in-out;
+            
+            &:not(:last-child)
+            {
+                margin-right: 32px;
+            }
+            &::before
+            {
+                display: block;
+                content: "";
+                position: absolute;
+                height: 5px;
+                background: linear-gradient(to right, $limeGreen, $brightCyan);
+                right: 0;
+                left: 0;
+                bottom: -34px;
+                opacity: 0;
+                transition: opacity 200ms ease-in-out;
+                
+            }
+            &:hover
+            {
+                color: $darkBlue;
+
+                &::before
+                {
+                    opacity: 1;
+                }
+                
+            }
+
+        }
+        
+    }
+    &__mmenu
+    {
+        position: absolute;
+        visibility: hidden;
+        background: $white;
+        padding: 33px;
+        margin-top: 42px;
+        width: calc(100% - 48px);
+        border-radius: 5px;
+        a
+        {
+            display: block;
+            color: $darkBlue;
+            font-size: 14px;
+            &:not(:last-child)
+            {
+                margin-bottom: 25px;
+            }
+            text-align: center;
+        }
+
+    }
+
+
+
+}
+
+
+//overlay
+
+.overlay
+{
+    position: fixed;
+    visibility: hidden;
+    background: linear-gradient(180deg, $darkBlue, transparent);
+    top: 63px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

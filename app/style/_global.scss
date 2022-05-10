@@ -1,0 +1,107 @@
+
+
+html
+{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body
+{
+    font-family: 'Public Sans', sans-serif;
+    font-size: $bodyFont;
+    &.noscroll
+    {
+        overflow: hidden;
+    }
+}
+
+//links
+
+a, a:hover, a:active, a:visited
+{
+    text-decoration: none;
+}
+
+// flex box
+
+.flex
+{
+    display: flex;
+    &-jc-c
+    {
+        justify-content: center;
+    }
+    &-jc-sb
+    {
+        justify-content: space-between;
+    }
+    &-ai-c
+    {
+        align-items: center;
+    }
+}
+
+//button style
+
+button, .button
+{
+    font-size: 14px;
+    font-weight: 300;
+    color: $white;
+    background: linear-gradient(to right, $limeGreen, $brightCyan);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    transition: opacity 200ms ease-in-out;
+}
+
+.button:hover, button:hover
+{
+    opacity: 50%;
+}
+
+
+//responsive
+
+//hide for mobile and tablet
+
+.hide-for-mobile
+{
+    @include breakpoint-down (medium)
+    {
+        display: none;
+    }
+}
+
+//hide for desktop
+
+.hide-for-desktop
+{
+    @include breakpoint-up (large)
+    {
+        display: none;
+    }
+}
+
+
+//animations
+
+.fade-in
+{
+    animation: fade-in 300ms ease-in-out forwards;
+}
+
+
+.fade-out
+{
+    animation: fade-out 300ms ease-in-out forwards;
+}
+
