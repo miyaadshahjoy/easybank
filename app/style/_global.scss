@@ -18,6 +18,7 @@ body
     font-family: 'Public Sans', sans-serif;
     font-size: $bodyFont;
     color: $grayishBlue;
+    
     &.noscroll
     {
         overflow: hidden;
@@ -90,6 +91,7 @@ button, .button
     @include breakpoint-up (large)
     {
         display: none;
+        
     }
 }
 
@@ -117,4 +119,16 @@ button, .button
 h1, h2, h3
 {
     margin-top: 0;
+}
+
+//
+.desktop-container
+{
+    @include breakpoint-up(large)
+    {
+        max-width: 1110px;
+        margin: 0 auto;
+
+    }
+    
 }
