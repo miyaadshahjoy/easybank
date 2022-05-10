@@ -17,6 +17,7 @@ body
 {
     font-family: 'Public Sans', sans-serif;
     font-size: $bodyFont;
+    color: $grayishBlue;
     &.noscroll
     {
         overflow: hidden;
@@ -53,6 +54,7 @@ a, a:hover, a:active, a:visited
 
 button, .button
 {
+    display: inline-block;
     font-size: 14px;
     font-weight: 300;
     color: $white;
@@ -105,3 +107,14 @@ button, .button
     animation: fade-out 300ms ease-in-out forwards;
 }
 
+.container
+{
+    margin-bottom: 85px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+h1, h2, h3
+{
+    margin-top: 0;
+}
