@@ -2,6 +2,13 @@
 
 .header
 {
+
+    @include breakpoint-up(large)
+    {
+        max-width: 1110px;
+        margin: 0 auto;
+
+    }
     position: relative;
     padding: 20px 24px;
     background: $white;
@@ -144,7 +151,7 @@
         }
 
     }
-
+    
 
 
 }
