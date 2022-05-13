@@ -271,7 +271,7 @@ h1, h2, h3 {
 
 .mobile-wrapper .mhero__image {
   position: relative;
-  background-image: url("images/bg-intro-mobile.svg");
+  background-image: url("../../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -289,7 +289,7 @@ h1, h2, h3 {
 .mobile-wrapper .mhero__image::before {
   content: "";
   position: absolute;
-  background-image: url("images/image-mockups.png");
+  background-image: url("../../images/image-mockups.png");
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center -110px;
@@ -397,7 +397,7 @@ h1, h2, h3 {
 .desktop-wrapper .dhero__image::before {
   content: "";
   position: absolute;
-  background-image: url("images/bg-intro-desktop.svg");
+  background-image: url("../../images/bg-intro-desktop.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center bottom;
@@ -408,7 +408,7 @@ h1, h2, h3 {
 .desktop-wrapper .dhero__image::after {
   content: "";
   position: absolute;
-  background-image: url("images/image-mockups.png");
+  background-image: url("../../images/image-mockups.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: bottom;
