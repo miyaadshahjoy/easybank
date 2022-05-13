@@ -1,0 +1,124 @@
+.features
+{
+    background-color: $lightGrayishBlue;
+
+}
+.feature
+{
+    
+    text-align: center;
+    
+    // @include breakpoint-up(large)
+    // {
+    //     margin-top: 110px;
+    //     margin-bottom: 90px;
+    // }
+    
+
+
+    &__grid
+    {
+        display: grid;
+        padding-bottom: 65px;
+        @include breakpoint-up(medium)
+        {
+            grid-template-columns: repeat(2, 1fr);
+            padding-bottom: 100px;
+        }
+        @include breakpoint-up(large)
+        {
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+        
+        
+
+    }
+
+    &__items
+    {
+        @include breakpoint-up(large)
+        {
+            margin-right: 25px;
+        }
+
+    }
+
+    &__headline
+    {
+        @include breakpoint-up(large)
+        {
+            width: 60%;
+        }
+        
+        h1
+        {
+            
+            font-size: 30px;
+            color: $darkBlue;
+            font-weight: 300;
+            padding-top: 65px;
+            margin-bottom: 25px;
+            @include breakpoint-up(large)
+            {
+                font-size: 35px;
+                padding-top: 110px;
+                margin-bottom: 30px;
+                text-align: left;
+            }
+        }
+
+        p
+        {
+            font-size: $mobileFont;
+            margin-bottom: 55px;
+
+            @include breakpoint-up(large)
+            {
+                font-size: $bodyFont;
+                text-align: start;
+                margin-bottom: 70px;
+            }
+
+        }
+
+    }
+
+    &__icon
+    {
+        margin-bottom: 25px;
+        @include breakpoint-up(large)
+        {
+            margin-bottom: 40px;
+            text-align: left;
+        }
+    }
+
+    &__title
+    {
+        font-size: 22px;
+        color: $darkBlue;
+        font-weight: 300;
+        margin-bottom: 25px;
+        @include breakpoint-up(large)
+        {
+            font-size: 25px;
+            text-align: left;
+            margin-bottom: 30px;
+
+        }
+    }
+    &__description
+    {
+        font-size: $mobileFont;
+        font-weight: 300;
+        margin-bottom: 35px;
+        @include breakpoint-up(large)
+        {
+            text-align: start;
+            margin-bottom: 0;
+            
+            line-height: 1.5;
+        }
+    }
+}

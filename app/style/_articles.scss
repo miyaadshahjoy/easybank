@@ -1,0 +1,96 @@
+.articles
+{
+    
+    background-color: $veryLightGray;
+    padding-bottom: 65px;
+    &__heading
+    {
+        font-size: 30px;
+        color: $darkBlue;
+        text-align: center;
+        font-weight: 300;
+        padding-top: 90px;
+        margin-bottom: 30px;
+        
+
+        @include breakpoint-up(large)
+        {
+            font-size: 37px;
+            margin-bottom: 55px;
+            text-align: start;
+        }
+    }
+
+    &__cards
+    {
+        display: grid;
+        gap: 30px;
+        
+        @include breakpoint-up (medium)
+        {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+        @include breakpoint-up (large)
+        {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+    }
+    &__content
+    {
+        background-color: $white;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 24px;
+        box-shadow: 0 0 10px rgba(0,0,0, 0.05);
+        transition: all 150ms ease-in-out;
+        &:hover
+        {
+            transform: scale(1.03);
+        }
+
+
+    }
+
+    &__image
+    {
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__text
+    {
+        padding: 27px;
+    }
+
+    &__author
+    {
+        font-size: 10px;
+        margin-bottom: 14px;
+
+    }
+
+    &__title
+    {
+        display: inline-block;
+        font-size: $bodyFont;
+        color: $darkBlue;
+        font-weight: 300;
+        margin-bottom: 15px;
+        &:hover
+        {
+            color: $limeGreen;
+        }
+
+    }
+
+    &__description
+    {
+        font-size: $mobileFont;
+        margin-bottom: 15px;
+    }
+    
+}
+
