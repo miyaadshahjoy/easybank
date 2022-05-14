@@ -79,6 +79,7 @@
         color: $darkBlue;
         font-weight: 300;
         margin-bottom: 15px;
+        transition: all 150ms ease-in-out;
         &:hover
         {
             color: $limeGreen;

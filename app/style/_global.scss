@@ -112,8 +112,8 @@ button, .button
 .container
 {
     
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 24px!important;
+    padding-left: 24px!important;
     @include breakpoint-up(large)
     {
         max-width: 1110px;
