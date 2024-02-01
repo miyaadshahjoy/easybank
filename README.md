@@ -1,1 +1,1 @@
-[# easybankLandinPage](https://miyaadjoy.github.io/easybankLandinPage/)
+[# easybankLandinPage: https://miyaadshahjoy.github.io/easybank/](https://miyaadshahjoy.github.io/easybank/)
